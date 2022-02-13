@@ -1,0 +1,42 @@
+{
+    "name": "aLpha",
+    "description": "Organize upcoming assignments exclusively for SBU students",
+    "version": "1.1.0",
+    "manifest_version": 2,
+    "icons": {
+        "16":"/images/iconss.png",
+        "32":"/images/iconss.png",
+        "48":"/images/iconss.png",
+        "128":"/images/iconss.png"
+    },
+    "background": {
+        "scripts": []
+    },
+    "content_scripts":[{
+        "matches": ["https://blackboard.stonybrook.edu/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_1_1"], 
+        "js": ["jquery.js", "contentScript.js"],
+        "run_at":"document_idle"
+    },
+    {
+        "matches": ["https://blackboard.stonybrook.edu/*"], 
+        "js": ["jquery.js", "contentScript2.js"],
+        "run_at":"document_idle"
+    }],
+    "browser_action": {
+        "default_icon": "/images/SB_logo.png",
+        "default_popup": "popup.html"
+    },
+    "permissions":[
+        "tabs",
+        "activeTab",
+        "http://*/*",
+        "clipboardRead",
+        "clipboardWrite",
+        "unlimitedStorage",
+        "storage"
+
+    ],
+    "content_security_policy": "script-src 'self' https://example.com; object-src 'self'"
+
+
+}

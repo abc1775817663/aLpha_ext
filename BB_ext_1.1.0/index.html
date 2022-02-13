@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+    <head>
+        <title>Assignment Manager</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+        <meta name="description" content="">
+        <meta name="viewpoint" content="width=device-width, initial scale=1">
+        <link rel="stylesheet" href="style.css">
+        <!-- <div class='back'>
+            <h1>
+                <img src="images/SB_logo.png" class="rocket-logo">
+                <a href='popup.html'  target="_self" class="backhome">
+                Back to HomePage</a>
+        </h1></div> -->
+    </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+        header form {
+            display: flex;
+            width: 40rem;
+        }
+
+        ::placeholder {
+            font-size: 0.95rem;
+        }
+        form button {
+            background-color: seagreen;
+            color: #fff;
+            
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        form button:hover {
+            background-color: var(--color-primary);
+        }
+        form textarea {
+            margin: 0px 10px 0px 5px;
+            width: 15rem;
+        }
+        .notes {
+            padding:1rem;
+            background-color: rgb(219, 212, 201);
+            border-radius: 5px;
+            margin: 1rem 0;
+        }
+        body {
+            background-color: rgb(206, 183, 155);
+        }
+        h1 {
+            font-size: 35px;
+            font-style:oblique;
+            color:black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+        }
+        .noteCounter{
+            font-size: 1.7rem;
+        }
+        .noteTitle {
+            font-size: 1.9rem;
+        }
+        .add-btn {
+            margin-left: 12px;
+            background-color: #1e30d1;
+            outline: none;
+            border: none;
+            border-radius: 20px;
+            color: #fff;
+            font-style:inherit;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .add-btn:hover{
+            background-color: #0088a9;
+        }
+
+        .delete-btn {
+            padding: 7px;
+            margin-top: 0px;
+            margin-bottom: 10px;
+            background-color: rgb(185, 57, 57);
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            cursor: pointer;
+            margin-right: 10px;
+            font-style: inherit;
+            font-weight: bold;
+            font-size: 11px;
+            
+        }
+        .delete-btn:hover {
+            background-color: rgb(214, 93, 93);
+        }
+
+
+        .container {
+            margin-top: 1px;
+
+        }
+
+
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+            background-color: rgb(246, 252, 248);
+        }
+        li,a,button {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            color: black;
+            text-decoration: none;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:30px 10%;
+        }
+        .logo{
+            width: 100px;
+            height: 80px;
+            cursor: pointer;
+        }
+        .nav_links {
+            list-style: none;
+        }
+        .nav_links li {
+            display: inline-block;
+            padding:0px 20px;
+        }
+        .nav_links a {
+            transition: all 0.3s ease 0s;
+        }
+        .nav_links li a:hover {
+            color: #0088a9;
+        }
+        button {
+            padding:9px 25px;
+            background-color: black;
+            border:none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+        }
+        button:hover{
+            background-color: rgb(54, 43, 43);
+        }
+        .c{
+            color:white;
+            font-style: inherit;
+            font-weight: bold;
+        }
+        .noteText{
+            font-size: large;
+        }
+
+
+    </style>
+    
+
+    <body>
+        <header class="top">
+            <img src="images/reminder.png" class="logo">
+            <nav>
+                <ul class="ul_links">
+                </ul>
+            </nav>
+            <a class="c" href="popup.html" target="_self"><button class="c">HomePage</button></a>
+        </header>
+
+
+
+        <header>
+            <div class="container">
+                <h1>Assignment Script</h1>
+                <form action="">
+                    <input class="enter" type="text" id="courseName" placeholder="Enter the Task">
+                    <input class="set-today" type="date" id="dueDate" placeholder="due date in form of mm/dd" >
+                    <input type="time" id="time" placeholder="Insert time" value="23:59">
+                    <button class="add-btn" id="add-btn">Add to the List</button>
+                </form>
+            </div>
+        </header>
+
+
+
+        <section>
+            <div class="container">
+                <h2>Added Tasks</h2>
+                <hr>
+                <div id="notes" class="notes">
+                    <div id="note">
+                        <p class="noteText">Assignments</p>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <script src="backEnd.js"></script>
+
+    </body>
+
+
+</html>
