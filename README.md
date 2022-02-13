@@ -47,4 +47,4 @@
     Overall, a fun event! I hope we can help people with aLpha.
 
 ## Demo
-    https://studio.youtube.com/video/_fIBViaSn7U/edit
+    https://www.youtube.com/watch?v=_fIBViaSn7U&feature=youtu.be
