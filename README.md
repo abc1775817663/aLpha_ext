@@ -6,7 +6,7 @@
     Furthermore, we try to develop something useful that can facilitate people, particularly students like us. 
     Hence, we surveyed Stony Brook University students around campus asking them what's their biggest concern or problem in pursuing their education degrees. 
     As a result, 18 out of 31 participants said low GPA was their main concern, and the direct reason is not that they are irresponsible or the HomeWorks is too hard, but that they accidentally missed the deadline. 
-  We conceptualized all the ideas we got that could possibly solve the situation. Finally, we came up with our product aLpha.
+    We conceptualized all the ideas we got that could possibly solve the situation. Finally, we came up with our product aLpha.
 
 ## What it does
     aLpha is an amazing convenient tool that can assist students to facilitate their work and successfully achieve their education. 
